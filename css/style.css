@@ -1,9 +1,11 @@
 /* General */
 body {
-  background: linear-gradient(to bottom, #000000, #01000c);
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  height: 100px;
+  background: url('https://img.freepik.com/free-vector/stream-binary-code-design-vector_53876-166142.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 
 /* Header */
@@ -98,27 +100,19 @@ header {
 }
 
 #inicio h2 {
-  margin: 0;
+  margin: ;
   font-size: 2.5rem;
+  text-align: center;
 }
 
 #inicio p {
   margin: 10px 0;
   font-size: 1.2rem;
+
 }
 
 .content {
   max-width: 100%;
-}
-
-.logo {
-  max-width: 30%;
-  text-align: right;
-}
-
-.logo img {
-  max-width: 80%;
-  height: auto;
 }
 
 /*sector inicio*/
@@ -130,7 +124,7 @@ header {
 
 #tecno .tecno1 p {
   font-size: 1.5rem;
-  color: #333;
+  color: #f3a805;
   margin-bottom: 20px;
 }
 
@@ -139,7 +133,6 @@ header {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  overflow-x: ; /* Permite el desplazamiento horizontal si las imágenes no caben en la pantalla */
 }
 
 #tecno .tecno2 img {
