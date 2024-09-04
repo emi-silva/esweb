@@ -148,3 +148,48 @@ header {
 #tecno .tecno2 img:hover {
   transform: scale(1.1); /* Efecto de agrandamiento al pasar el cursor sobre las imágenes */
 }
+
+#services {
+  padding: 50px 20px;
+  background-color: transparent; /* Fondo transparente para ver la imagen de fondo de la página */
+  text-align: center;
+}
+
+#services h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #f3a805;
+}
+
+.service-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-box {
+  background-color: rgba(255, 255, 255, 0.61); /* Color de fondo blanco con transparencia para los cuadros */
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(255, 230, 0, 0.98);
+  flex-basis: calc(33.333% - 20px);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#services h3 {
+  font-size: 1.8em;
+  color: #2c018e;
+  margin-bottom: 10px;
+}
+
+#services p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #185665;
+  margin: 0;
+}
+
