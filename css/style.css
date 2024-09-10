@@ -173,12 +173,19 @@ header {
   margin: 10px;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(255, 230, 0, 0.98);
-  flex-basis: calc(33.333% - 20px);
+  flex-basis: calc(45% - 20px);
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+.service-icon {
+  width: 50px; /* Ajusta el tamaño según sea necesario */
+  height: 50px;
+  margin-bottom: 10px;
+}
+
 
 #services h3 {
   font-size: 1.8em;
@@ -193,3 +200,93 @@ header {
   margin: 0;
 }
 
+#services-0 {
+  background-color: transparent; /* Fondo transparente para ver la imagen de fondo de la página */
+  text-align: center;
+}
+
+.services-1 {
+  font-size: 2.5em;
+  margin-bottom:20px;
+  margin-top: -10px;
+  color: rgb(242, 167, 5);
+}
+
+.service-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-box-1 {
+  background-color: rgba(255, 255, 255, 0.61); /* Fondo blanco con transparencia */
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(255, 230, 0, 0.98);
+  flex-basis: calc(88% - 20px); /* Ajusta el tamaño del cuadro */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.service-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.service-box-1 h3 {
+  font-size: 1.8em;
+  color: #2c018e;
+  margin-bottom: 10px;
+}
+
+.service-box-1 p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #185665;
+  margin: 0;
+}
+
+#contactos {
+  text-align: center;
+  padding: 50px 10px;
+}
+
+#contactos h2 {
+  font-size: 2em;
+  color: rgb(242, 167, 5);
+  margin-bottom: 20px;
+}
+
+.social-links {
+  display: flex;
+  justify-content:space-between;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin-left: 18%;
+  margin-right: 18%;
+}
+
+.social-links a {
+  display: inline-block;
+  width: 55px;
+  height: 70px;
+  transition: transform 0.3s ease; /* Animación suave en hover */
+}
+
+.social-links a img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20%; /* Redondear los íconos */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover img {
+  transform: scale(1.1); /* Agrandar ligeramente al hacer hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Aumentar la sombra en hover */
+}
