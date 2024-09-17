@@ -348,3 +348,125 @@ footer a {
 footer a:hover {
   text-decoration: underline; /* Subrayar enlaces al pasar el ratón */
 }
+
+/* Estilos generales para Flexbox */
+.navbar, .service-container, .programming-images, #tecno .tecno2, .social-links {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en la siguiente línea */
+}
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%; /* Asegura que el menú ocupe todo el ancho disponible */
+  }
+
+  .nav-links a {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .programming-images img {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #inicio {
+    height: auto;
+    padding: 20px;
+  }
+
+  #inicio h2 {
+    font-size: 2rem;
+  }
+
+  #inicio p {
+    font-size: 1rem;
+  }
+
+  #tecno .tecno2 {
+    flex-direction: column;
+  }
+
+  .tecno2 img {
+    width: 50px;
+    margin: 10px;
+  }
+
+  .service-box {
+    flex-basis: 100%;
+  }
+
+  #contactos {
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  #contactos h2 {
+    font-size: 24px;
+  }
+
+  .social-links img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* Estilos para tabletas */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    gap: 20px;
+    width: auto; /* Ajusta el ancho del menú */
+  }
+
+  .programming-images img {
+    max-width: 45%;
+  }
+
+  #inicio h2 {
+    font-size: 2.2rem;
+  }
+
+  #inicio p {
+    font-size: 1.1rem;
+  }
+
+  #tecno .tecno2 {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .tecno2 img {
+    width: 60px;
+    margin: 10px;
+  }
+
+  .service-box {
+    flex-basis: calc(50% - 20px);
+  }
+
+  #contactos {
+    padding: 30px;
+    border-radius: 15px;
+  }
+
+  #contactos h2 {
+    font-size: 26px;
+  }
+
+  .social-links img {
+    width: 35px;
+    height: 35px;
+  }
+}
